@@ -7,3 +7,9 @@ Install packages
 - pip install stable-baselines3
 - pip install pygame
 - pip install Box2D
+
+
+docker build -t hitldemo . 
+docker create -it --name HITLDemo hitldemo
+docker start HITLDemo
+docker exec -it HITLDemo python3 keyboard_agent.py
