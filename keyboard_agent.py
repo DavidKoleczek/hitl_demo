@@ -194,7 +194,7 @@ def main(trained_agent_type, zoom_level):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--trained_agent_type', type=int, default=2)
+    parser.add_argument('--trained_agent_type', type=int, default=1)
     parser.add_argument('--zoom_level', type=int, default=2)
 
     args = vars(parser.parse_args())
