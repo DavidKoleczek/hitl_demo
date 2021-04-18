@@ -168,7 +168,7 @@ def main(trained_agent_type, zoom_level):
     # 4: Ensemble of 1, 2, and 3. i.e. an action is sampled uniformly randomly from one of those agents at each timestep
     if trained_agent_type == 0:
         # this agent doesn't actually do anything, just a placeholder to satisfy HITLSBLunarLanderContEval's API
-        hitl_agent = SAC.load('sac_lunar_hitl_1p_sensor00.zip')
+        hitl_agent = SAC.load('savedModels/sac_lunar_hitl_1p_sensor00.zip')
         eval_env = HITLSBLunarLanderContEval('LunarLanderContinuous-v2', hitl_agent, do_not_intervene=True)
         play(eval_env, zoom=zoom_level, fps=60, keys_to_action=keys_to_action, callback=print_rewards_callback)
     elif trained_agent_type == 4:
