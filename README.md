@@ -11,12 +11,22 @@ A red box in the top right corner indicates that the agent is overriding your ac
 ## Installation
 In general, to run `keyboard_agent.py` requires:
 - A Python 3.8 environment
+```
+python -m venv ".\env" 
+.\env\Scripts\activate
+python -m pip install --upgrade pip setuptools wheel
+```
 - PyTorch 1.8+, such as with this command 
 
 ```
 pip3 install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
 ```
-- All the packages in `requirements.txt` to be installed
+
+- Install all the packages in `requirements.txt`
+```
+pip install -r requirements.txt
+```
+
 
 ### Windows
 For Windows, we include a batch script to install the environment for you, assuming you have Python 3 on your path available as ``python``.
