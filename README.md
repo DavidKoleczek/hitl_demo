@@ -1,4 +1,4 @@
-# Demo for [Cooperative Multi Agent Reinforcement Learning with Human in the Loop](https://github.com/DavidKoleczek/human_marl)
+# Demo for [On Optimizing Interventions For Shared Autonomy](https://github.com/DavidKoleczek/human_marl)
 
 A script that lets you play Lunar Lander with one of our agents assisting you. 
 
